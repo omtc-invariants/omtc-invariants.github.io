@@ -36,7 +36,7 @@ ul.sidenav li a.active {
 }
 
 ul.sidenav li a:hover:not(.active) {
-  background-color: #c1cbff;
+  background-color: #c8cff4;
 }
 
 div.content {
@@ -125,7 +125,7 @@ div.content {
 
 .gallery-cell.is-selected .realcell {
     transform: scale(1.25);
-    background-color: #c1cbff;
+    background-color: #c8cff4;
 }
 
 .buttonlink {
@@ -151,6 +151,7 @@ div.content {
   pointer-events: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  display: block;
 }
 
 .omugraph {
