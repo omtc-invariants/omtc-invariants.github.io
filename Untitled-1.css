@@ -162,3 +162,9 @@ div.content {
   right: 0;
   z-index: -1;
 }
+
+mark.warning {
+  color:#ff0000;
+  background: none;
+  font-weight: 500;
+}
