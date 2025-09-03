@@ -154,8 +154,12 @@ div.content {
 }
 
 .section-transition {
-  width: 100%; 
-  margin: -1px 0%;
+  width: 100vw;
+  margin-left: calc(100% - 100vw);
+  margin-right: calc(100% - 100vw);
+  margin-top: -2px;
+  margin-bottom: -2px;
+  overflow: hidden;
   user-select: none; 
   pointer-events: none;
   -webkit-user-select: none;
@@ -181,6 +185,11 @@ mark.warning {
   color:#ff0000;
   background: none;
   font-weight: 500;
+}
+
+mark.question {
+  background: none;
+  font-weight: 550;
 }
 
 .flex-container {
