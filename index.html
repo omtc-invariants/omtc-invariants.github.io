@@ -28,15 +28,31 @@
 </head>
 <body>
 
-<ul class="sidenav">
-  <li><img src="assets/logowhite.png" class="sitelogo"></li>
-  <li><a class="active" href="index">Home</a></li>
-  <li><a href="register">Register</a></li>
-  <li><a href="prepare">Prepare</a></li>
-  <li><a href="about">About Us</a></li>
-</ul>
+<div id="long-sidenav">
+    <div class="sidenav-header">
+        <img src="assets/logowhite.png" class="sitelogo">
+        <button id="closeit"><img src="assets/cross.png" class="omuicon"></button></li> 
+    </div>
+    
+    <div class="sidenav-links">
+        <a class="active" href="index">Home</a></li>
+        <a href="register">Register</a></li>
+        <a href="prepare">Prepare</a></li>
+        <a href="about">About Us</a></li>
+    </div>
+</div>
+<div id="short-sidenav">
+    <div class="sidenav-header">
+        <button id="hamburger"><img src="assets/hamburger.png" class="omuicon"></button> 
+        <a href="index"><img src="assets/omu.png" class="omuicon"></a>
+    </div>  
+    
+    <div class="sidenav-links">
+        <a href="https://www.instagram.com/oxford_mtc/"><img src="assets/instagram.png" class="socials"></a>
+    </div>
+</div>
 
-<div class="content">
+<div id="content">
   <img src="assets/omugraph.png" class="omugraph" id="parrallax">
   <!-- Parallax Effect -->
   <script>const img = document.getElementById('parrallax');
@@ -60,7 +76,7 @@
   <img src="assets/waves2.svg" class="section-transition">
   <div class="gallery-container">
     <h1 style="margin: 0px 24px 0px 40px">The OMTC involves:</h1>
-  <div class="gallery js-flickity" data-flickity='{ "cellAlign": "center", "pageDots": false, "initialIndex": 1 }'>
+  <div class="gallery js-flickity" data-flickity='{ "cellAlign": "center", "pageDots": false, "initialIndex": 1 }' style="margin-top: 30px";>
     <!-- <div class="gallery-cell">
         <div class="realcell">
             <h4 class="timeline-time">10:00am - 10:30am</h4>
@@ -105,6 +121,7 @@
 </div>
 <img src="assets/waves3.svg" class="section-transition">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="script.js"></script>
 </div>
 
 </body>
