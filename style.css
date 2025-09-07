@@ -276,9 +276,6 @@ button {
   mask-composite: subtract;
   mask-mode: alpha;
   position: absolute;
-  transform: translateY(0);
-  transition: transform 0.1s linear;
-  will-change: transform;
   right: 0;
   z-index: -1;
 }
