@@ -21,15 +21,31 @@
 </head>
 <body>
 
-<ul class="sidenav">
-  <li><img src="assets/logowhite.png" class="sitelogo"></li>
-  <li><a href="index">Home</a></li>
-  <li><a class="active" href="register">Register</a></li>
-  <li><a href="prepare">Prepare</a></li>
-  <li><a href="about">About Us</a></li>
-</ul>
+<div id="long-sidenav">
+    <div class="sidenav-header">
+        <img src="assets/logowhite.png" class="sitelogo">
+        <button id="closeit"><img src="assets/cross.png" class="omuicon"></button></li> 
+    </div>
+    
+    <div class="sidenav-links">
+        <a class="active" href="index">Home</a></li>
+        <a href="register">Register</a></li>
+        <a href="prepare">Prepare</a></li>
+        <a href="about">About Us</a></li>
+    </div>
+</div>
+<div id="short-sidenav">
+    <div class="sidenav-header">
+        <button id="hamburger"><img src="assets/hamburger.png" class="omuicon"></button> 
+        <a href="index"><img src="assets/favicons/android-chrome-512x512.png" class="omuicon"></a>
+    </div>  
+    
+    <div class="sidenav-links">
+        <a href="https://www.instagram.com/oxford_mtc/"><img src="assets/instagram.png" class="socials"></a>
+    </div>
+</div>
 
-<div class="content">
+<div id="content">
     <div style="padding: 30px 50px;">
         <h1>Register</h1>
         <p>You can't register just yet. Feel free to sign up to our mailing list, though! This is how we'll be keeping in touch with interested teams until registration is open. When the <a href="#key-dates">key dates and times</a> are decided on, this is where you'll hear it first.</p>
@@ -86,6 +102,7 @@
     </div>
 </div>
 </div>
+<script src="script.js"></script>
 
 </body>
 </html>
