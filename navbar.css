@@ -1,5 +1,7 @@
 #long-sidenav {
+    position: relative;
     list-style-type: none;
+    text-align: center;
     margin: 0;
     padding: 0;
     width: 20%;
@@ -23,13 +25,13 @@
     display: block;
     text-align: center;
     color: #000;
-    padding: 10%;
+    padding: 5vh;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.6vw;
 }
    
 #long-sidenav a.active {
@@ -45,7 +47,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3% 2%;
+    padding: 3% 5%;
+}
+
+#omubridges {
+    width: 80%;
+    bottom: 10%;
+    margin-top: 5vw;
+    border-radius: 15px;
 }
   
 #short-sidenav {
@@ -91,7 +100,7 @@
 }
   
 #short-sidenav .sidenav-links .socials {
-    height: 25px;
+    height: 2.2vw;
 }
 
 #short-sidenav a{
@@ -108,42 +117,55 @@ button {
 }
 
 .sitelogo {
-    height: 45px;
+    height: 3.75vw;
 }
 
 .omuicon {
-    height: 35px;
+    height: 2.75vw;
 }
 
 @media screen and (orientation: portrait) {
     #short-sidenav {
-      height: 8%;
-      width: 100vw;
-      flex-direction: row;
-      align-items: center;
+        height: 8%;
+        width: 100vw;
+        flex-direction: row;
+        align-items: center;
     }
   
     #short-sidenav .sidenav-header {
-      flex-direction: row;
-      padding: 0 3vw;
-      gap: 3vw;
+        flex-direction: row;
+        padding: 0 3vw;
+        gap: 3vw;
     }
   
     #short-sidenav .sidenav-links {
-      flex-direction: row;
-      padding: 0 3vw;
+        flex-direction: row;
+        padding: 0 3vw;
     }
   
     #long-sidenav {
-      width: 100%;
-      transform: translateX(-100%);
+        width: 100%;
+        transform: translateX(-100%);
+    }
+
+    #long-sidenav a{
+        font-size: 6vw;
+        padding: 4vh;
+    }
+
+    #omubridges {
+        margin-top: 15vw;
     }
 
     .omuicon {
-        height: 30px;
+        height: 8.5vw;
+    }
+
+    .sitelogo {
+        height: 12vw;
     }
 
     #short-sidenav .sidenav-links .socials {
-        height: 25px;
+        height: 7vw;
     }
 }
