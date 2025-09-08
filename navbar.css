@@ -1,0 +1,149 @@
+#long-sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    left: -20%;
+    background-color: #d7dae5;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    z-index: 2;
+}
+  
+#long-sidenav .sidenav-header img {
+    display: block;
+    color: #000;
+    padding: 5% 3%;
+    text-decoration: none;
+}
+  
+#long-sidenav a {
+    display: block;
+    text-align: center;
+    color: #000;
+    padding: 10%;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+   
+#long-sidenav a.active {
+    background-color: #646985;
+    color: white;
+}
+  
+#long-sidenav a:hover:not(.active) {
+    background-color: #c8cff4;
+}
+  
+#long-sidenav .sidenav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 2%;
+}
+  
+#short-sidenav {
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    background-color: #d7dae5;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+  
+  /* #short-sidenav img {
+    display: block;
+    color: #000;
+    padding: 8px 8px;
+    text-decoration: none;
+  } */
+  
+#short-sidenav .sidenav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0;
+    gap:2vh;
+}
+  
+#short-sidenav .sidenav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 1vw 0;
+}
+  
+#short-sidenav .sidenav-links .socials {
+    height: 25px;
+}
+
+#short-sidenav a{
+    display: flex;
+    align-items: center;
+}
+
+button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.sitelogo {
+    height: 45px;
+}
+
+.omuicon {
+    height: 35px;
+}
+
+@media screen and (orientation: portrait) {
+    #short-sidenav {
+      height: 7%;
+      width: 100vw;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    #short-sidenav .sidenav-header {
+      flex-direction: row;
+      padding: 0 1.5vw;
+      gap: 2vw;
+    }
+  
+    #short-sidenav .sidenav-links {
+      flex-direction: row;
+      padding: 0 1.5vw;
+    }
+  
+    #long-sidenav {
+      width: 100%;
+      left: -100%;
+    }
+
+    .omuicon {
+        height: 25px;
+    }
+
+    #short-sidenav .sidenav-links .socials {
+        height: 20px;
+    }
+}

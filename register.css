@@ -1,0 +1,13 @@
+#register-content {
+    padding: 3vw 4.25vw;
+}
+
+@media screen and (orientation: portrait) {
+    #register-content h1{
+        font-size: calc(1rem + 3vw);;
+    }
+
+    #register-content p{
+        font-size: calc(5vw);;
+    }
+}

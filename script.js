@@ -10,6 +10,10 @@ hamburger.onclick = function() {
 }
 
 closeit.onclick = function() {
+    if(window.matchMedia("(orientation: portrait)").matches){
+        longSidenav.style.left = "-100%";
+        return;
+    }
     longSidenav.style.left = "-20%";
     // content.style.transform = 'translateX(0%)'
 }

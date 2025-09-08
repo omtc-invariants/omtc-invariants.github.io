@@ -1,0 +1,144 @@
+.omugraph {
+    width: 70%;
+    min-width: 800px;
+    max-width: 2000px;
+    mask-image:
+        linear-gradient(310deg, rgba(0,0,0,1), rgba(0,0,0,1) 35%, rgba(0,0,0,0) 85%, rgba(0,0,0,0)),
+        linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,1) 10%, rgba(0,0,0,0) 30%, rgba(0,0,0,0));
+    mask-composite: subtract;
+    mask-mode: alpha;
+    position: absolute;
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+    will-change: transform;
+    right: 0;
+    z-index: -1;
+}
+
+#header {
+    width: 50%;
+    height: 300px; 
+    padding-top: 5vh;
+    padding-left: 4.25vw;
+}
+
+#header p {
+    font-size: calc(1rem + 0.125vw);
+    line-height: 1.5;
+}
+
+#header h1 {
+    margin-top: 0;
+    font-size: calc(2rem + 0.25vw);
+    font-weight: 500;
+}
+
+#register {
+    background-color: #C8CFF4; 
+    margin: 0px; 
+    padding: 60px;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+
+.gallery-container {
+  background-color: #e9edfd;
+  padding: 30px 0px;
+}
+
+.gallery-container h1{
+    margin: 0px 24px 0px 40px;
+}
+
+.gallery-cell {
+  width: 350px;
+  height: 275px;
+}
+
+.realcell {
+    transition: margin 0.3s, transform 0.3s, background-color 0.3s;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.gallery-cell .realcell {
+    width: 250px;
+    height: 180px;
+    margin: 30px;
+    background-color: #d7dae5;
+}
+
+.gallery-cell.is-selected .realcell {
+    transform: scale(1.25);
+    background-color: #c8cff4;
+}
+
+.realcell p{
+    font-size: 16px;
+}
+
+@media screen and (orientation: portrait) {
+    .omugraph {
+        width: 200%;
+        min-width: 0;
+        max-width: none;
+        mask-image:
+        linear-gradient(270deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 55%, rgba(0,0,0,0)),
+        linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 30%, rgba(0,0,0,0));
+    }
+
+    #header {
+        width: 95.75vw;
+    }
+
+    #header p {
+        padding-right: 6%;
+    }
+
+    #register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #register p{
+       font-size: calc(1rem + 0.125vw); 
+       line-height: 1.5;
+    }
+
+    .gallery-container h1{
+        margin: 0px 0px 0px 20px;
+    }
+
+    .gallery-cell {
+        width: 250px;
+        height: 250px;
+    }
+
+    .gallery-cell .realcell {
+        width: 175px;
+        height: 175px;
+        margin: 30px;
+        background-color: #d7dae5;
+    }
+
+    .gallery-cell .realcell h2{
+        font-size: calc(1rem + 1.5vw);
+    }
+
+    .gallery-cell .realcell h4{
+        font-size: calc(4vw);
+    }
+
+    .gallery-cell .realcell p{
+        font-size: calc(3.5vw);
+    }
+
+    .gallery-cell .realcell a{
+        font-size: calc(3.5vw);
+    }
+}
