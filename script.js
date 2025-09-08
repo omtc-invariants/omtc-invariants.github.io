@@ -5,15 +5,11 @@ let longSidenav = document.getElementById("long-sidenav");
 let content = document.getElementById("content");
 
 hamburger.onclick = function() {
-    longSidenav.style.left = "0%";
+    longSidenav.style.transform = "translateX(0%)"
     // content.style.transform = 'translateX(15%)'
 }
 
 closeit.onclick = function() {
-    if(window.matchMedia("(orientation: portrait)").matches){
-        longSidenav.style.left = "-100%";
-        return;
-    }
-    longSidenav.style.left = "-20%";
+    longSidenav.style.transform = "translateX(-100%)"
     // content.style.transform = 'translateX(0%)'
 }

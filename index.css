@@ -44,6 +44,11 @@
   display: none;
 }
 
+.gallery{
+    margin-top: 30px;
+    height: 277px;
+}
+
 .gallery-container {
   background-color: #e9edfd;
   padding: 30px 0px;

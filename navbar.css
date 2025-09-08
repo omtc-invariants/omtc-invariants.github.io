@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     width: 20%;
-    left: -20%;
+    transform: translateX(-100%);
     background-color: #d7dae5;
     position: fixed;
     height: 100%;
@@ -117,7 +117,7 @@ button {
 
 @media screen and (orientation: portrait) {
     #short-sidenav {
-      height: 7%;
+      height: 8%;
       width: 100vw;
       flex-direction: row;
       align-items: center;
@@ -125,25 +125,25 @@ button {
   
     #short-sidenav .sidenav-header {
       flex-direction: row;
-      padding: 0 1.5vw;
-      gap: 2vw;
+      padding: 0 3vw;
+      gap: 3vw;
     }
   
     #short-sidenav .sidenav-links {
       flex-direction: row;
-      padding: 0 1.5vw;
+      padding: 0 3vw;
     }
   
     #long-sidenav {
       width: 100%;
-      left: -100%;
+      transform: translateX(-100%);
     }
 
     .omuicon {
-        height: 25px;
+        height: 30px;
     }
 
     #short-sidenav .sidenav-links .socials {
-        height: 20px;
+        height: 25px;
     }
 }
