@@ -1,13 +1,36 @@
-#prepare-content {
-    padding: 3vw 4.25vw;
+#syllabus-and-format {
+    padding: 30px 50px 20px 50px;
+    background-color: #C8CFF4;
+}
+
+#practice {
+    padding: 10px 50px 20px 50px;
+    background-color: #ffffff;
+}
+
+#faq {
+    padding: 10px 50px 50px 50px;
+    background-color: #e9edfd;
 }
 
 @media screen and (orientation: portrait) {
-    #prepare-content h1{
-        font-size: calc(1rem + 3vw);;
+    h1{
+        font-size: 8vw;
     }
 
-    #prepare-content p{
-        font-size: calc(5vw);;
+    #syllabus-and-format {
+        padding: 3vw 4.25vw 5vw 4.25vw;
+    }
+    
+    #practice {
+        padding: 3vw 4.25vw 5vw 4.25vw;
+    }
+
+    #faq {
+        padding: 3vw 4.25vw 10vw 4.25vw;
+    }
+
+    p{
+        font-size: 4.5vw;
     }
 }

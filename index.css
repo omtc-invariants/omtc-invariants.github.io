@@ -1,14 +1,11 @@
 .omugraph {
     width: 70%;
-    min-width: 800px;
-    max-width: 2000px;
     mask-image:
         linear-gradient(310deg, rgba(0,0,0,1), rgba(0,0,0,1) 35%, rgba(0,0,0,0) 85%, rgba(0,0,0,0)),
         linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,1) 10%, rgba(0,0,0,0) 30%, rgba(0,0,0,0));
     mask-composite: subtract;
     mask-mode: alpha;
     position: absolute;
-    transform: translateY(0);
     transition: transform 0.1s linear;
     will-change: transform;
     right: 0;
@@ -17,72 +14,103 @@
 
 #header {
     width: 50%;
-    height: 300px; 
-    padding-top: 5vh;
-    padding-left: 4.25vw;
+    padding-top: 3vw;
+    padding-left: 4vw;
 }
 
 #header p {
-    font-size: calc(1rem + 0.125vw);
+    font-size: 19px;
     line-height: 1.5;
+    margin: 0 0 80px 0;
 }
 
 #header h1 {
     margin-top: 0;
-    font-size: calc(2rem + 0.25vw);
+    font-size: 40px;
     font-weight: 500;
 }
 
 #register {
     background-color: #C8CFF4; 
-    margin: 0px; 
-    padding: 60px;
+    padding: 5vw;
+}   
+
+#register p{
+    font-size: 19px;
+}
+
+#register .buttonlink{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#register .responsiveleft{
+    width: 140px; 
+    margin: 0 40px;
 }
 
 /* hide disabled button */
 .flickity-button:disabled {
-  display: none;
+    display: none;
 }
 
 .gallery{
-    margin-top: 30px;
-    height: 277px;
+    margin-top: 25px;
+    transition: height 0.3s;
 }
 
 .gallery-container {
-  background-color: #e9edfd;
-  padding: 30px 0px;
+    background-color: #e9edfd;
+    padding: 40px 0;
 }
 
 .gallery-container h1{
-    margin: 0px 24px 0px 40px;
+    margin: 0 3vw;
+    font-size: 40px;
 }
 
 .gallery-cell {
-  width: 350px;
-  height: 275px;
-}
-
-.realcell {
-    transition: margin 0.3s, transform 0.3s, background-color 0.3s;
-    border-radius: 10px;
-    padding: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-cell .realcell {
-    width: 250px;
-    height: 180px;
-    margin: 30px;
+    transition: margin 0.3s, transform 0.3s, background-color 0.3s;
+    border-radius: 14px;
+    padding: 25px;
+    width: 70%;
+    height: 70%;
+    margin: 0 30px;
     background-color: #d7dae5;
+    aspect-ratio: 1/1;
+}
+
+.gallery-cell .realcell h2{
+    font-size: 30px;
+}
+
+.gallery-cell .realcell h4{
+    font-weight: normal;
+    color: #676772;
+    margin: 0;
+    font-size: 17px;
 }
 
 .gallery-cell.is-selected .realcell {
-    transform: scale(1.25);
+    transform: scale(1.15);
     background-color: #c8cff4;
 }
 
 .realcell p{
-    font-size: 16px;
+    font-size: 19px;
+}
+
+.gallery-cell .realcell .buttonlink{
+    padding: 4% 8%;
+    font-size: 17px;
 }
 
 @media screen and (orientation: portrait) {
@@ -99,8 +127,16 @@
         width: 95.75vw;
     }
 
+    #header h1 {
+        margin-top: 5vw;
+        font-size: 9vw;
+        font-weight: 500;
+    }
+
     #header p {
         padding-right: 6%;
+        font-size: 4.7vw;
+        margin:0 0 10vw 0;
     }
 
     #register{
@@ -111,39 +147,61 @@
     }
 
     #register p{
-       font-size: calc(1rem + 0.125vw); 
+       font-size: 4vw;
        line-height: 1.5;
     }
 
+    #register .buttonlink{
+        padding: 3% 6%;
+        font-size: 4vw;
+    }
+
+    #register .responsiveleft{
+        width: 30vw;
+    }
+
+    .gallery-container {
+        padding: 10vw 0;
+    }
+
     .gallery-container h1{
-        margin: 0px 0px 0px 20px;
+        margin: 0 0 10vw 5vw;
+        font-size: 8vw;
     }
 
     .gallery-cell {
-        width: 250px;
-        height: 250px;
+        width: 70vw;
+        height: 70vw;
     }
 
     .gallery-cell .realcell {
-        width: 175px;
-        height: 175px;
-        margin: 30px;
+        width: fit-content;
+        margin: 7vw;
+        height: fit-content;
         background-color: #d7dae5;
+        border-radius: 2vw;
+        padding: 4vw;
     }
 
     .gallery-cell .realcell h2{
-        font-size: calc(1rem + 1.5vw);
+        font-size: 5.5vw;
     }
 
     .gallery-cell .realcell h4{
-        font-size: calc(4vw);
+        font-size: 3.4vw;
     }
 
     .gallery-cell .realcell p{
-        font-size: calc(3.5vw);
+        font-size: 3.3vw;
+        margin: 5% 0;
     }
 
-    .gallery-cell .realcell a{
-        font-size: calc(3.5vw);
+    .gallery-cell .realcell .buttonlink{
+        font-size: calc(2.7vw);
     }
+
+    .gallery-cell.is-selected .realcell {
+        transform: scale(1.25);
+    }
+
 }

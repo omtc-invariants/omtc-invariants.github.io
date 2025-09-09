@@ -8,7 +8,7 @@
     transform: translateX(-100%);
     background-color: #d7dae5;
     position: fixed;
-    height: 100%;
+    height: 101vh;
     overflow: auto;
     transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
     z-index: 2;
@@ -54,7 +54,7 @@
     width: 80%;
     bottom: 10%;
     margin-top: 5vw;
-    border-radius: 15px;
+    border-radius: 0.8vw;
 }
   
 #short-sidenav {
@@ -65,7 +65,7 @@
     width: 5%;
     background-color: #d7dae5;
     position: fixed;
-    height: 100%;
+    height: 101vh;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@
     align-items: center;
     justify-content: center;
     
-    padding: 1vw 0;
+    padding: 1.5vw 0;
 }
   
 #short-sidenav .sidenav-links .socials {
@@ -155,6 +155,7 @@ button {
 
     #omubridges {
         margin-top: 15vw;
+        border-radius: 4vw;
     }
 
     .omuicon {
