@@ -9,9 +9,10 @@
     mask-mode: alpha;
     position: absolute;
     transform: translateY(0);
-    transition: transform 0.1s linear;
+    /* transition: transform 0.1s linear; */
     will-change: transform;
     right: 0;
+    background-attachment: fixed;
     z-index: -1;
 }
 

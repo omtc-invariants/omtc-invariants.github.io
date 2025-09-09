@@ -33,7 +33,7 @@
 
 <div id="long-sidenav">
     <div class="sidenav-header">
-        <img src="assets/logowhite.png" class="sitelogo">
+        <img src="assets/logowhite.png" loading="eager" class="sitelogo">
         <button id="closeit"><img src="assets/cross.png" class="omuicon"></button></li> 
     </div>
     
@@ -44,7 +44,7 @@
         <a href="about">About Us</a></li>
     </div>
 
-    <img id="omubridges" src="assets/omubridges.png">
+    <img id="omubridges" loading="eager" src="assets/omubridges.png">
 </div>
 <div id="short-sidenav">
     <div class="sidenav-header">
@@ -58,14 +58,14 @@
 </div>
 
 <div id="content">
-    <img src="assets/omugraph.png" class="omugraph" id="parrallax">
+    <img src="assets/omugraph.png" class="omugraph" id="parallax">
     <!-- Parallax Effect -->
-    <script>const img = document.getElementById('parrallax');
+    <script>const img = document.getElementById('parallax');
 
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
             console.log(scrolled);
-            img.style.transform = `translateY(${scrolled * -0.3}px)`; // 0.5 = slower scroll speed
+            img.style.transform = `translateY(${scrolled * 0.5}px)`; // 0.5 = slower scroll speed
         });</script>
     <div id="header">
         <h1>Oxford Mathematics<br>Team Challenge</h1>

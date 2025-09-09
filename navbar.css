@@ -25,7 +25,7 @@
     display: block;
     text-align: center;
     color: #000;
-    padding: 5vh;
+    padding: 4vh;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
@@ -52,7 +52,9 @@
 
 #omubridges {
     width: 80%;
-    bottom: 10%;
+    position: absolute;
+    left: 10%;
+    bottom: 4vh;
     margin-top: 5vw;
     border-radius: 15px;
 }
@@ -145,7 +147,7 @@ button {
   
     #long-sidenav {
         width: 100%;
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
 
     #long-sidenav a{
@@ -167,5 +169,17 @@ button {
 
     #short-sidenav .sidenav-links .socials {
         height: 7vw;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-width: 450px) {
+    #omubridges {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    #omubridges {
+        display: none;
     }
 }

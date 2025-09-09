@@ -5,11 +5,21 @@ let longSidenav = document.getElementById("long-sidenav");
 let content = document.getElementById("content");
 
 hamburger.onclick = function() {
-    longSidenav.style.transform = "translateX(0%)"
-    // content.style.transform = 'translateX(15%)'
+    let isPortrait = window.matchMedia("(orientation: portrait)").matches;
+    if (!isPortrait) {
+        longSidenav.style.transform = "translateX(0%)"
+        // content.style.transform = 'translateX(15%)'
+    } else {
+        longSidenav.style.transform = "translateY(0%)"
+    }
 }
 
 closeit.onclick = function() {
-    longSidenav.style.transform = "translateX(-100%)"
-    // content.style.transform = 'translateX(0%)'
+    let isPortrait = window.matchMedia("(orientation: portrait)").matches;
+    if (!isPortrait) {
+        longSidenav.style.transform = "translateX(-100%)"
+        // content.style.transform = 'translateX(15%)'
+    } else {
+        longSidenav.style.transform = "translateY(-100%)"
+    }
 }
