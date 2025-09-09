@@ -6,9 +6,11 @@
     mask-composite: subtract;
     mask-mode: alpha;
     position: absolute;
-    transition: transform 0.1s linear;
+    transform: translateY(0);
+    /* transition: transform 0.1s linear; */
     will-change: transform;
     right: 0;
+    background-attachment: fixed;
     z-index: -1;
 }
 

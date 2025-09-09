@@ -13,6 +13,21 @@
     background-color: #e9edfd;
 }
 
+table {
+  border-collapse: collapse;
+  width: 600px;
+}
+
+table, th, td {
+  border: 2px solid;
+}
+
+tr:hover {background-color: #d7dae5;}
+
+th, td {
+  padding: 5px;
+}
+
 @media screen and (orientation: portrait) {
     h1{
         font-size: 8vw;
