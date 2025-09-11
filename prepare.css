@@ -1,51 +1,51 @@
 #syllabus-and-format {
-    padding: 30px 50px 20px 50px;
+    padding: 0.1vw 4vw 1vw 4vw;
     background-color: #C8CFF4;
 }
 
 #practice {
-    padding: 10px 50px 20px 50px;
+    padding: 1vw 4vw;
     background-color: #ffffff;
 }
 
 #faq {
-    padding: 10px 50px 50px 50px;
+    padding: 1vw 4vw 3vw 4vw;
     background-color: #e9edfd;
 }
 
 table {
-  border-collapse: collapse;
-  width: 600px;
+    border-collapse: collapse;
+    width: 600px;
 }
 
 table, th, td {
-  border: 2px solid;
+    border: 2px solid;
 }
 
-tr:hover {background-color: #d7dae5;}
+tr:hover {
+    background-color: #d7dae5;
+}
 
 th, td {
-  padding: 5px;
+    padding: 5px;
+}
+
+h1{
+    font-size: 40px;
+    margin: 3vw 0 30px 0;
+}
+
+#content{
+    font-size: 19px;
 }
 
 @media screen and (orientation: portrait) {
     h1{
         font-size: 8vw;
+        margin: 3vw 0;
     }
 
-    #syllabus-and-format {
-        padding: 3vw 4.25vw 5vw 4.25vw;
-    }
-    
-    #practice {
-        padding: 3vw 4.25vw 5vw 4.25vw;
-    }
-
-    #faq {
-        padding: 3vw 4.25vw 10vw 4.25vw;
-    }
-
-    p{
+    #content{
         font-size: 4.5vw;
     }
 }

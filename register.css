@@ -1,40 +1,57 @@
 #register-content {
-    padding: 0.5vw 4.25vw;
+    padding: 0.1vw 4vw;
     background-color: #ffffff; 
 }
 
 #logistics {
-    padding: 0.5vw 4.25vw;
+    padding: 1vw 4vw;
     background-color: #e9edfd;
 }
 
 #key-dates{
-    padding: 0.5vw 4.25vw;
+    padding: 0.5vw 4vw;
     background-color: #e9edfd; 
 }
 
 #on-the-day{
-    padding: 0.5vw 4.25vw;
+    padding: 0.5vw 4vw;
     background-color: #e9edfd; 
 }
 
 #other-events{
-    padding: 0.5vw 4.25vw;
+    padding: 0.5vw 4vw;
     background-color: #e9edfd; 
 }
 
 #faq{
-    padding: 0.5vw 4.25vw 3vw 4.25vw;
+    padding: 1vw 4vw 3vw 4vw;
     background-color: #c8cff4;
 }
 
+h1{
+    font-size: 40px;
+    margin: 3vw 0 30px 0;
+}
+
+#content{
+    font-size: 19px;
+}
 
 @media screen and (orientation: portrait) {
-    #register-content h1{
-        font-size: calc(1rem + 3vw);;
+    h1{
+        font-size: 8vw;
+        margin: 3vw 0;
     }
 
-    #register-content p{
-        font-size: calc(5vw);;
+    #content{
+        font-size: 4.5vw
+    }
+
+    ul{
+        padding-left: 7vw;
+    }
+
+    ol{
+        padding-left: 7vw;
     }
 }

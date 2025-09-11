@@ -1,46 +1,6 @@
-#about-content {
-    padding: 30px 50px 20px 50px;
-}
-
 #contact-details {
-    padding: 10px 50px 50px 50px;
+    padding: 0.1vw 4vw 1vw 4vw;
     background-color: #e9edfd;
-}
-
-.flex-container {
-    background-color: #C8CFF4;
-    padding: 2vw 4.25vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-container > div {
-    background-color: #e9edfd;
-    width: 240px;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.flex-container > div > h2 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 6px;
-}
-
-.flex-container > div > p {
-    text-align: center;
-    margin-top: 0px;
-}
-
-.flex-container > div > img {
-    width: 60%;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #contact-boxes{
@@ -54,7 +14,7 @@
     width: 200px;
     border-radius: 15px;
     padding: 20px;
-    margin: 20px;
+    margin: 2vw 20px;
     cursor: pointer;
     transition: transform 500ms ease-out;
     color:white;
@@ -95,6 +55,14 @@
     background: blue;
 }
 
+#about-content {
+    padding: 1vw 4vw;
+}
+
+#omutree{
+    width: 150px;
+}
+
 #about-description{
     display: flex;
     flex-direction: column;
@@ -106,43 +74,121 @@
     font-size: 20px;
 }
 
-@media screen and (orientation: portrait) {
-    #about-content h1{
-        font-size: 8vw;
-    }
+.flex-container {
+    background-color: #C8CFF4;
+    padding: 2vw 4.25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-    #about-content {
-        padding: 3vw 4.25vw 10vw 4.25vw;
-    }
-    
+.flex-container > div {
+    background-color: #e9edfd;
+    width: 240px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flex-container > div > h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.flex-container > div > p {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.flex-container > div > img {
+    width: 60%;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-size: 40px;
+    margin: 3vw 0 30px 0;
+}
+
+@media screen and (orientation: portrait) {
     #contact-details {
         padding: 3vw 4.25vw 10vw 4.25vw;
     }
 
     .social-box {
-        width: 27%;
-        padding: 3%;
+        width: 35vw;
+        padding: 3vw;
         border-radius: 2vw;
     }
 
     .social-box .wrap h3 {
-        font-size: 2.5vw;
-        margin: 0;
+        font-size: 3vw;
     }
 
     .social-box .wrap img {
-        height: 2.5vw;
+        height: 4vw;
     }
 
     .social-box p {
-        font-size: 2vw;
+        font-size: 2.5vw;
+    }
+
+    #about-content {
+        padding: 3vw 4.25vw 10vw 4.25vw;
+    }
+
+    #omutree{
+        width: 40vw;
+    }
+
+    #about-content p{
+        font-size: 4.5vw;
     }
 
     #omutree{
         text-align: center;
     }
 
-    #about-description p{
+    #omutree img{
+        width: 50vw;
+    }
+
+    .flex-container > div {
+        background-color: #e9edfd;
+        width: 66vw;
+        margin: 3vw;
+        border-radius: 2.4vw;
+        padding: 5vw;
+    }
+
+    .flex-container > div > h2 {
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 6vw;
+        margin-bottom: 2vw;
+    }
+
+    .flex-container > div > p {
+        text-align: center;
         font-size: 4.5vw;
+        margin-top: 0px;
+    }
+
+    .flex-container > div > img {
+        width: 60%;
+        border-radius: 2.4vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 8vw;
+        margin: 3vw 0;
     }
 }

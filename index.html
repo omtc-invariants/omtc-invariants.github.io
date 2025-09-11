@@ -46,6 +46,7 @@
 
     <img id="omubridges" loading="eager" src="assets/omubridges.png">
 </div>
+
 <div id="short-sidenav">
     <div class="sidenav-header">
         <button id="hamburger"><img src="assets/hamburger.png" class="omuicon"></button> 
@@ -58,7 +59,9 @@
 </div>
 
 <div id="content">
-    <img src="assets/omugraph.png" class="omugraph" id="parallax">
+    <div id="parallax-container">
+        <img src="assets/omugraph.png" class="omugraph" id="parallax">
+    </div>
     <!-- Parallax Effect -->
     <script>const img = document.getElementById('parallax');
 
@@ -74,7 +77,7 @@
     </div>
     <img src="assets/waves.svg" class="section-transition">
     <div id="register">
-        <img class="responsiveleft" src="assets/email.png">
+        <div class="responsiveleft"><img src="assets/email.png"></div>
         <p>You can't register for the OMTC just yet. If you're extra eager to sign up, then join our mailing list and get notified as soon as it starts!</p>
         <a class="buttonlink" href="register">Sure, take me there!</a>
     </div>
