@@ -1,0 +1,39 @@
+#error-message{
+    text-align: center;
+    background-color: #e9edfd;
+    padding: 2vh 0;
+}
+
+#error-message img{
+    height: 350px;
+}
+
+#error-message p{
+    padding: 0 50px;
+    font-size: 25px;
+}
+
+#error-message .buttonlink{
+    padding: 10px 25px;
+    margin-bottom: 1vh;
+    font-size: 25px;
+}
+
+
+@media screen and (orientation: portrait) {
+    #error-message img{
+        width: 40vw;
+    }
+
+    #error-message p{
+        padding: 0 10vw;
+        font-size: 5vw;
+    }
+
+    #error-message .buttonlink{
+        font-size: 4vw;
+        padding: 3vw 6vw;
+        margin: 1vh 0;
+        font-size: 5vw;
+    }
+}

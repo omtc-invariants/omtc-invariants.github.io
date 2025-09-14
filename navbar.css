@@ -1,11 +1,12 @@
 #long-sidenav {
     position: relative;
     list-style-type: none;
-    min-width: 256px;
+    min-width: min(256px, 30vw);
     text-align: center;
     margin: 0;
     padding: 0;
     width: 20vw;
+    container-type: size;
     transform: translateX(-100%);
     background-color: #d7dae5;
     position: fixed;
@@ -35,7 +36,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 125%;
+    font-size: 4cqh;
 }
    
 #long-sidenav a.active {
@@ -60,7 +61,7 @@
     left: 10%;
     bottom: 4vh;
     margin-top: 5vw;
-    border-radius: 0.8vw;
+    border-radius: 0.7vw;
 }
   
 #short-sidenav {
@@ -92,7 +93,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1vw 0;
+    padding-top: 2vh;
     gap: 2vh;
 }
   
@@ -102,7 +103,7 @@
     align-items: center;
     justify-content: center;
     
-    padding: 1.5vw 0;
+    padding-bottom: 3vh;
 }
   
 #short-sidenav .sidenav-links .socials {
