@@ -1,5 +1,5 @@
 #contact-details {
-    padding: 0.1vw 4vw 1vw 4vw;
+    padding: 0.1vw 4vw 1vw calc(19.4px + 2.5vw);
     background-color: #e9edfd;
 }
 
@@ -11,10 +11,10 @@
 }
 
 .teamphoto {
-  user-select: none; 
-  pointer-events: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+    user-select: none; 
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .social-box {
@@ -63,7 +63,7 @@
 }
 
 #about-content {
-    padding: 1vw 4vw;
+    padding: 1vw 4vw 1vw calc(19.4px + 2.5vw);
 }
 
 #omutree{
@@ -83,7 +83,7 @@
 
 .flex-container {
     background-color: #C8CFF4;
-    padding: 2vw 4.25vw;
+    padding: 2vw 4.25vw 2vw calc(19.4px + 2.75vw);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -126,6 +126,10 @@ h1{
     #contact-details {
         padding: 3vw 4.25vw 10vw 4.25vw;
     }
+    
+    #contact-boxes{
+        margin-top: 5vw;
+    }
 
     .social-box {
         width: 35vw;
@@ -163,6 +167,10 @@ h1{
 
     #omutree img{
         width: 50vw;
+    }
+
+    .flex-container{
+        padding-left: 4.25vw;
     }
 
     .flex-container > div {

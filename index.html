@@ -47,6 +47,7 @@
     <img id="omubridges" loading="eager" src="assets/omubridges.png">
 </div>
 
+
 <div id="short-sidenav">
     <div class="sidenav-header">
         <button id="hamburger"><img src="assets/hamburger.png" class="omuicon"></button> 
@@ -67,8 +68,7 @@
 
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
-            console.log(scrolled);
-            img.style.transform = `translateY(${scrolled * 0.5}px)`; // 0.5 = slower scroll speed
+            img.style.transform = `translateY(${scrolled * 0.5}px)`;
         });</script>
     <div id="header">
         <h1>Oxford Mathematics<br>Team Challenge</h1>

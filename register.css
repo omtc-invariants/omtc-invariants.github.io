@@ -1,30 +1,30 @@
 #register-content {
-    padding: 0.1vw 4vw;
+    padding: 0.1vw 4vw 0.1vw calc(19.4px + 2.5vw);
     background-color: #ffffff; 
 }
 
 #logistics {
-    padding: 1vw 4vw;
+    padding: 1vw 4vw 1vw calc(19.4px + 2.5vw);
     background-color: #e9edfd;
 }
 
 #key-dates{
-    padding: 0.5vw 4vw;
+    padding: 0.5vw 4vw 0.5vw calc(19.4px + 2.5vw);
     background-color: #e9edfd; 
 }
 
 #on-the-day{
-    padding: 0.5vw 4vw;
+    padding: 0.5vw 4vw 0.5vw calc(19.4px + 2.5vw);
     background-color: #e9edfd; 
 }
 
 #other-events{
-    padding: 0.5vw 4vw;
+    padding: 0.5vw 4vw 0.5vw calc(19.4px + 2.5vw);
     background-color: #e9edfd; 
 }
 
 #faq{
-    padding: 1vw 4vw 3vw 4vw;
+    padding: 1vw 4vw 3vw calc(19.4px + 2.5vw);
     background-color: #c8cff4;
 }
 
@@ -53,5 +53,29 @@ h1{
 
     ol{
         padding-left: 7vw;
+    }
+    
+    #register-content {
+        padding-left: 4vw;
+    }
+
+    #logistics {
+        padding-left: 4vw;
+    }
+
+    #key-dates{
+        padding-left: 4vw;
+    }
+
+    #on-the-day{
+        padding-left: 4vw;
+    }
+
+    #other-events{
+        padding-left: 4vw;
+    }
+
+    #faq{
+        padding-left: 4vw;
     }
 }
