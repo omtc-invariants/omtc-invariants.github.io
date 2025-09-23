@@ -75,10 +75,32 @@
         <p>Contact us with any specific queries. (Please do check our FAQs too) </p>
       </a> -->
     </div>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="76b1ec63-99ef-4b24-bb5a-cd5f0ca6961f" />
+    <input type="hidden" name="subject" value="New OMTC Contact Form Submission" />
+    <input type="hidden" name="from_name" value="OMTC Website" />
+    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit buttonlink" type="submit">Send Message</button>
+  </form>
   </div>
   <img src="assets/waves13.svg" class="section-transition">
   <div id="about-content"> 
-    <!-- put contact form here pls -->
     <h1>About the OMTC Team</h1>
     <div id="about-description">
       <img id="omutree" src="assets/omu_apple.png" class="responsiveleft">

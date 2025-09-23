@@ -58,8 +58,30 @@
     background: radial-gradient(circle at 30% 107%, #fd5949 25%,#d6249f 60%,#285AEB 90%);
 }
 
-#email{
-    background: blue;
+.contact-form { 
+    font-size: 20px;
+}
+
+textarea, input {
+    font-family: "Rubik", sans-serif;
+}
+
+textarea {
+    height: 100px; width: 200px;
+}
+
+.buttonlink {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.form-group {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.form-group > label {
+    width: 100px;
 }
 
 #about-content {
