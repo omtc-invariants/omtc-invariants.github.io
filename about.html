@@ -58,7 +58,7 @@
   <img src="assets/waves12.svg" class="section-transition">
   <div id="contact-details">
     <h1>Get in Touch</h1>
-    
+    <div class="sidebyside">
     <div id="contact-boxes">
       <a class="social-box" id="ig" href="https://www.instagram.com/oxford_mtc/">
         <div class="wrap">
@@ -85,15 +85,15 @@
             <input type="hidden" name="subject" value="OMTC Contact Form Submission" />
             <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-            <div style="display:flex; gap:3.5rem; margin-bottom:1.25rem;">
-              <div style="width: 50%">
+            <div class="sidebyside">
+              <div>
                 <label for="fname">Name</label>
                 <input type="text" name="name" id="first_name" placeholder="Omu McTeam" required class="form-input" />
                 <div class="empty-feedback invalid-feedback reasonably-angry">
                   Please provide your name.
                 </div>
               </div>
-              <div style="width: 50%;">
+              <div>
                 <label for="email" style="margin-bottom: 0.5rem;">Email Address</label>
                 <input type="email" name="email" id="email" placeholder="omu@email.com" required class="form-input" />
                 <div class="empty-feedback reasonably-angry">
@@ -122,6 +122,7 @@
       </div>
     </div>
     <script src="form.js"></script>
+  </div>
   </div>
 
   <img src="assets/waves13.svg" class="section-transition">
