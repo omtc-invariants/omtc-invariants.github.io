@@ -57,7 +57,8 @@
 <div id="content">
   <img src="assets/waves12.svg" class="section-transition">
   <div id="contact-details">
-    <h1>Contact Details</h1>
+    <h1>Get in Touch</h1>
+    
     <div id="contact-boxes">
       <a class="social-box" id="ig" href="https://www.instagram.com/oxford_mtc/">
         <div class="wrap">
@@ -66,39 +67,63 @@
         </div>  
         <p>We post announcements, results and some fun reels and memes along the way.</p>
       </a>
-
-      <!-- <a class="social-box" id="email" href="mailto:someone@example.com">
-        <div class="wrap">
-            <img src="assets/email-clip.svg" class="socials">
-            <h3>Email</h3>
-        </div>  
-        <p>Contact us with any specific queries. (Please do check our FAQs too) </p>
-      </a> -->
     </div>
-    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-    <input type="hidden" name="access_key" value="76b1ec63-99ef-4b24-bb5a-cd5f0ca6961f" />
-    <input type="hidden" name="subject" value="New OMTC Contact Form Submission" />
-    <input type="hidden" name="from_name" value="OMTC Website" />
-    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+    <div style="width: 100%;">
+      <div style="margin-left: auto; margin-right: auto; margin-top: 2.5rem; margin-bottom: 2.5rem; max-width: 36rem; border-radius: 0.375rem; background-color: rgb(255,255,255); padding: 1.25rem;">
+        <div style="text-align: center;">
+          <h1 style="margin-top: 0.75rem; margin-bottom: 0.75rem; font-size: 1.875rem; line-height: 2.25rem; font-weight: 500;">
+            Contact Us
+          </h1>
+          <p style="color: rgb(114, 117, 123);">
+            Fill the form below to send us a message!
+          </p>
+        </div>
+        <div style="margin: 1.75rem;">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <input type="hidden" name="access_key" value="76b1ec63-99ef-4b24-bb5a-cd5f0ca6961f" />
+            <input type="hidden" name="subject" value="OMTC Contact Form Submission" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-    <div class="form-group-container">
-      <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+            <div style="display:flex; gap:3.5rem; margin-bottom:1.25rem;">
+              <div style="width: 50%">
+                <label for="fname">Name</label>
+                <input type="text" name="name" id="first_name" placeholder="Omu McTeam" required class="form-input" />
+                <div class="empty-feedback invalid-feedback reasonably-angry">
+                  Please provide your name.
+                </div>
+              </div>
+              <div style="width: 50%;">
+                <label for="email" style="margin-bottom: 0.5rem;">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="omu@email.com" required class="form-input" />
+                <div class="empty-feedback reasonably-angry">
+                  Please provide your email address.
+                </div>
+                <div class="invalid-feedback reasonably-angry">
+                  Please provide a valid email address.
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom: 1.25rem;">
+              <label for="message">Your Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="This is my message for the world:" class="form-input" required></textarea>
+              <div class="empty-feedback invalid-feedback reasonably-angry">
+                Please enter your message.
+              </div>
+            </div>
+            <div style="margin-bottom: 1.25rem;">
+              <button type="submit" class="buttonlink">
+                Send Message
+              </button>
+            </div>
+            <p style="text-align: center; font-size: 1rem; line-height: 1.5rem; color: rgb(156,163,175);" id="result"></p>
+          </form>
+        </div>
       </div>
     </div>
-    <button class="form-submit buttonlink" type="submit">Send Message</button>
-  </form>
+    <script src="form.js"></script>
   </div>
+
   <img src="assets/waves13.svg" class="section-transition">
   <div id="about-content"> 
     <h1>About the OMTC Team</h1>
