@@ -37,6 +37,18 @@ h1{
     font-size: 19px;
 }
 
+.glink {
+  color:hsl(228, 100%, 50%);
+}
+
+.glink:hover {
+  text-decoration: solid underline 2px;
+}
+
+.glink:visited {
+  color: hsl(300, 100%, 37.5%);
+}
+
 @media screen and (orientation: portrait) {
     h1{
         font-size: 8vw;

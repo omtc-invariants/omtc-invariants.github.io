@@ -148,6 +148,18 @@ label {
     margin-right: auto;
 }
 
+.glink {
+  color:hsl(228, 100%, 50%);
+}
+
+.glink:hover {
+  text-decoration: solid underline 2px;
+}
+
+.glink:visited {
+  color: hsl(300, 100%, 37.5%);
+}
+
 h1{
     font-size: 40px;
     margin: 3vw 0 30px 0;

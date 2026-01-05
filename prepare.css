@@ -13,16 +13,34 @@
     background-color: #e9edfd;
 }
 
+.glink {
+  color:hsl(228, 100%, 50%);
+}
+
+.glink:hover {
+  text-decoration: solid underline 2px;
+}
+
+.glink:visited {
+  color: hsl(300, 100%, 37.5%);
+}
+
 table {
     border-collapse: collapse;
+    margin: 0 auto;
 }
 
 table, th, td {
     border: 2px solid rgb(67, 67, 67);
 }
 
-tr:hover {
-    background-color: #d7dae5;
+th {
+    background-color: #5f7fff;
+    color: white;
+}
+
+td:hover {
+    background-color: #d6dfff;
 }
 
 th, td {
@@ -48,6 +66,11 @@ h1{
 
 #content{
     font-size: 19px;
+}
+
+.icon {
+    height: 1em;
+    vertical-align: middle;
 }
 
 @media screen and (orientation: portrait) {
