@@ -15,11 +15,10 @@
 
 table {
     border-collapse: collapse;
-    width: 600px;
 }
 
 table, th, td {
-    border: 2px solid;
+    border: 2px solid rgb(67, 67, 67);
 }
 
 tr:hover {
@@ -27,7 +26,19 @@ tr:hover {
 }
 
 th, td {
-    padding: 5px;
+    padding: 1.5vw 4vw;
+    text-align: center;
+}
+
+td div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+td img {
+    width: 1vw;
 }
 
 h1{
@@ -59,5 +70,16 @@ h1{
 
     #faq {
         padding-left: 4vw;
+    }
+
+    td div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    td img {
+        width: 4vw;
     }
 }
