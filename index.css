@@ -48,24 +48,27 @@
 
 #register {
     background-color: #C8CFF4; 
-    padding: 2vw 5vw 2.1vw calc(19.4px + 3.5vw);
-}   
-
-#register p{
-    font-size: 19px;
 }
 
-#register .buttonlink{
+.alert{
+    padding: 2vw 5vw 2.1vw calc(19.4px + 3.5vw);
+}
+
+.alert p{
+    font-size: 20px;
+}
+
+.alert .buttonlink{
     padding: 10px 20px;
     font-size: 15px;
 }
 
-#register .responsiveleft{
+.alert .responsiveleft{
     margin: 0 40px;
     text-align: center;
 }
 
-#register .responsiveleft img{
+.alert .responsiveleft img{
     width: 140px;
 }
 
@@ -168,7 +171,7 @@
         margin:0 0 10vw 0;
     }
 
-    #register{
+    .alert{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -176,17 +179,17 @@
         padding: 5vw;
     }
 
-    #register p{
+    .alert p{
        font-size: 4vw;
        line-height: 1.5;
     }
 
-    #register .buttonlink{
+    .alert .buttonlink{
         padding: 3% 6%;
         font-size: 4vw;
     }
 
-    #register .responsiveleft img{
+    .alert .responsiveleft img{
         width: 30vw;
     }
 
