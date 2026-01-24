@@ -13,13 +13,18 @@
     background-color: #e9edfd; 
 }
 
-#on-the-day{
+#offline-itinerary{
     padding: 0.5vw 4vw 0.5vw calc(19.4px + 2.5vw);
     background-color: #e9edfd; 
 }
 
+#online-itinerary{
+    padding: 0.5vw 4vw 4vw calc(19.4px + 2.5vw);
+    background-color: #e9edfd; 
+}
+
 #other-events{
-    padding: 0.5vw 4vw 0.5vw calc(19.4px + 2.5vw);
+    padding: 0.5vw;
     background-color: #e9edfd; 
 }
 
@@ -79,11 +84,11 @@ h1{
         padding-left: 4vw;
     }
 
-    #on-the-day{
+    #offline-itinerary{
         padding-left: 4vw;
     }
 
-    #other-events{
+    #online-itinerary{
         padding-left: 4vw;
     }
 
