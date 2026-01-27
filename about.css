@@ -17,6 +17,17 @@
     -ms-user-select: none;
 }
 
+.fullteamphoto {
+    width: 600px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    user-select: none; 
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-radius: 15px;
+}
+
 .social-box {
     width: 200px;
     border-radius: 15px;
@@ -190,6 +201,10 @@ h1{
 
     .social-box p {
         font-size: 2.5vw;
+    }
+
+    .fullteamphoto {
+        width: 80vw;
     }
 
     #about-content {
