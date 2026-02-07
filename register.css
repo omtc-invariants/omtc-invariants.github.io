@@ -42,6 +42,10 @@ h1{
     font-size: 19px;
 }
 
+.pdf-icon {
+    width: 14px;
+}
+
 .glink {
   color:hsl(228, 100%, 50%);
 }
