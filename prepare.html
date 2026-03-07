@@ -3,9 +3,6 @@
 <head>
 <title>OMTC - Prepare</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="navbar.css">
-<link rel="stylesheet" type="text/css" href="prepare.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -31,14 +28,15 @@
 <div id="long-sidenav">
     <div class="sidenav-header">
         <img src="assets/logowhite.png" loading="eager" class="sitelogo">
-        <button id="closeit"><img src="assets/cross.png" class="omuicon"></button></li> 
+        <button id="closeit"><img src="assets/cross.png" class="omuicon"></button>
     </div>
     
     <div class="sidenav-links">
-        <a href="/">Home</a></li>
-        <a href="register">Register</a></li>
-        <a class="active" href="prepare">Prepare</a></li>
-        <a href="about">About Us</a></li>
+        <a href="/">Home</a>
+        <a href="register">Register</a>
+        <a class="active" href="prepare">Prepare</a>
+        <a href="results">Past Contests</a>
+        <a href="about">About Us</a>
     </div>
 
     <img id="omubridges" loading="eager" src="assets/omubridges.png">
@@ -68,46 +66,22 @@
     <div id="practice">
         <h1>Practice</h1>
         <h2>Sample papers</h2>
-        <p>Here are some sample papers for the OMTC. There is one paper for each round with solutions.<br><br>
-        We will not be releasing the OMTC25 papers as the competition format has changed significantly!</p>
+        <p>Here are some sample papers for the OMTC. There is one paper for each round with solutions. <b>For past contest papers, please check <a class="glink" href="results">here</a></b>. Do note that the format has changed vastly over the years, so the past papers might not be directly comparable to the current format.<br><br></p>
         
-        <div id="sample-table">
-            <table>
-                <tr>
-                    <th>Round</th><th>Sample Paper</th><th>Solutions</th>
-                </tr>
-                <tr>
-                    <td>Maps</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/sample/sample_maps_questions.pdf' target="_blank" class="glink">Maps Questions</a></div><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_maps_answersheet.pdf' target="_blank" class="glink">Maps Answer Sheet</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_maps_solutions.pdf' target="_blank" class="glink">Maps Solutions</a></div></td>
-                </tr>
-                <tr>
-                    <td>Lock-in</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/sample/sample_lockin_questions.pdf' target="_blank" class="glink">Lock-in Questions</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_lockin_solutions.pdf' target="_blank" class="glink">Lock-in Solutions</a></div></td>
-                </tr>
-                <tr>
-                    <td>Scenes</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/sample/sample_scenes_questions.pdf' target="_blank" class="glink">Scenes Questions</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_scenes_solutions.pdf' target="_blank" class="glink">Scenes Solutions</a></div></td>
-                </tr>
-            </table>
-        </div>
-
-        <h2>2026</h2>
-       
-        <p><b>Update 01/03/26:</b> unfortunately we have noticed a few mistakes to the logic behind our solutions of some of the Estimathon solutions (the answers are still right – they were cross-verified with code). We will try to resolve this by Monday.</p>
-
-        <div id="2026-table">
-            <table>
-                <tr>
-                    <th>Round</th><th>Paper</th><th>Solutions</th>
-                </tr>
-                <tr>
-                    <td>Maps</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/26/26_maps_questions.pdf' target="_blank" class="glink">Maps Questions</a></div><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/26/26_maps_answersheet.pdf' target="_blank" class="glink">Maps Answer Sheet</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/26/26_maps_solutions.pdf' target="_blank" class="glink">Maps Solutions</a></div></td>
-                </tr>
-                <tr>
-                    <td>Lock-in</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/26/26_lockin_questions.pdf' target="_blank" class="glink">Lock-in Questions</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/26/26_lockin_solutions.pdf' target="_blank" class="glink">Lock-in Solutions</a></div></td>
-                </tr>
-                <tr>
-                    <td>Scenes</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/26/26_scenes_questions.pdf' target="_blank" class="glink">Scenes Questions</a></div></td><td><div>Coming soon!</div></td>
-                </tr>
-            </table>
-        </div>
+        <table class="pdftable">
+            <tr>
+                <th>Round</th><th>Sample Paper</th><th>Solutions</th>
+            </tr>
+            <tr>
+                <td>Maps</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/sample/sample_maps_questions.pdf' target="_blank" class="glink">Maps Questions</a></div><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_maps_answersheet.pdf' target="_blank" class="glink">Maps Answer Sheet</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_maps_solutions.pdf' target="_blank" class="glink">Maps Solutions</a></div></td>
+            </tr>
+            <tr>
+                <td>Lock-in</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/sample/sample_lockin_questions.pdf' target="_blank" class="glink">Lock-in Questions</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_lockin_solutions.pdf' target="_blank" class="glink">Lock-in Solutions</a></div></td>
+            </tr>
+            <tr>
+                <td>Scenes</td><td><div><img src="assets/PDF_file_icon.svg" class="icon"> <a href='/docs/sample/sample_scenes_questions.pdf' target="_blank" class="glink">Scenes Questions</a></div></td><td><div><img src="assets/PDF_file_icon.svg"> <a href='/docs/sample/sample_scenes_solutions.pdf' target="_blank" class="glink">Scenes Solutions</a></div></td>
+            </tr>
+        </table>
     </div>
     <img src="assets/waves10.svg" class="section-transition">
     <div id="faq">

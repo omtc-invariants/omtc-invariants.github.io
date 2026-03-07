@@ -93,6 +93,52 @@ mark.question {
   float: left;
 }
 
+.glink {
+  color:hsl(228, 100%, 50%);
+}
+
+.glink:hover {
+  text-decoration: solid underline 2px;
+}
+
+.glink:visited {
+  color: hsl(300, 100%, 37.5%);
+}
+
+.pdftable {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.pdftable, th, td {
+    border: 2px solid rgb(67, 67, 67);
+}
+
+.pdftable th {
+    background-color: #5f7fff;
+    color: white;
+}
+
+.pdftable td:hover {
+    background-color: #d6dfff;
+}
+
+.pdftable th, td {
+    padding: 1.5vw 4vw;
+    text-align: center;
+}
+
+.pdftabletd div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.pdftable td img {
+    width: 14px;
+}
+
 @media screen and (max-width: 500px) {
   .responsiveleft {
     float: none;
@@ -108,5 +154,16 @@ mark.question {
 
   .responsiveleft {
     float: none;
+  }
+  
+  .pdftable td div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2vw;
+  }
+
+  .pdftable td img {
+      width: 4vw;
   }
 }

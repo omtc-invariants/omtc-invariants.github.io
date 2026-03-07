@@ -1,16 +1,6 @@
-#syllabus-and-format {
-    padding: 0.1vw 4vw 1vw calc(19.4px + 2.5vw);
-    background-color: #C8CFF4;
-}
-
-#practice {
+#results {
     padding: 1vw 4vw 1vw calc(19.4px + 2.5vw);
     background-color: #ffffff;
-}
-
-#faq {
-    padding: 1vw 4vw 3vw calc(19.4px + 2.5vw);
-    background-color: #e9edfd;
 }
 
 h1{
@@ -41,7 +31,7 @@ h1{
         padding-left: 4vw;
     }
 
-    #practice {
+    #results {
         padding-left: 4vw;
     }
 
