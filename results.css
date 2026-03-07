@@ -27,15 +27,11 @@ h1{
         font-size: 4.5vw;
     }
 
-    #syllabus-and-format {
-        padding-left: 4vw;
-    }
-
     #results {
         padding-left: 4vw;
     }
 
-    #faq {
-        padding-left: 4vw;
+    #result-bottom {
+        display: none;
     }
 }

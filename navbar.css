@@ -193,9 +193,7 @@ button {
         height: 3.5vh;
         width: auto;
     }
-}
 
-@media screen and (orientation: portrait) and (max-height: 140vw) {
     #omubridges {
         display: none;
     }
