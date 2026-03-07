@@ -128,7 +128,7 @@ mark.question {
     text-align: center;
 }
 
-.pdftabletd div{
+.pdftable td div{
     display: flex;
     align-items: center;
     justify-content: center;
