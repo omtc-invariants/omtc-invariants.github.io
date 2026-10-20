@@ -92,6 +92,11 @@
     font-size: 40px;
 }
 
+#omtcdisc{
+    padding: 0 3vw 0 calc(19.4px + 1.5vw);
+    font-size: 20px;
+}
+
 .gallery-cell {
     width: 400px;
     height: 400px;

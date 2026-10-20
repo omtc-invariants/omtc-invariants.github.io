@@ -129,6 +129,14 @@ button {
     width: 55%;
 }
 
+#omu{
+    transition: transform 0.7s ease-in-out;
+}
+
+#omu:hover{
+    transform: rotate(360deg);
+}
+
 #closeit{
     width: 15%;
 }
