@@ -27,6 +27,22 @@ h1{
     vertical-align: middle;
 }
 
+.download-button {
+    display: inline-flex;
+    margin-left: -2px;
+    color: #2c343b;
+}
+
+.download-button svg {
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 @media screen and (orientation: portrait) {
     h1{
         font-size: 8vw;
