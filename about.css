@@ -132,6 +132,11 @@ label {
     align-items: center;
 }
 
+.flex-container > h1 {
+    width: 100%;
+    text-align: center;
+}
+
 .flex-container > div {
     background-color: #e9edfd;
     width: 240px;
@@ -319,4 +324,83 @@ h1{
     outline: 2px solid transparent; 
     outline-offset: 2px; 
     box-shadow: 0 0 0 0px #fff,   0 0 0 calc(3px + 0px) rgb(59,130,246,0.5), 0 0 #0000;
+}
+
+/* past committees accordion */
+
+#past-committees-section {
+    background-color: white;
+}
+
+#past-committees {
+    width: 100%;
+    max-width: 900px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-item {
+    background-color: #e9edfd;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: none;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2c343b;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-icon {
+    font-size: 28px;
+    transition: transform 300ms ease-out;
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-out;
+}
+
+.past-members {
+    margin: 0;
+    padding: 0 24px 18px 24px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.past-members > li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+.past-members > li + li {
+    margin-top: 4px;
+}
+
+@media screen and (orientation: portrait) {
+    .accordion-header {
+        font-size: 5vw;
+        padding: 4vw 5vw;
+    }
+
+    .past-members {
+        font-size: 4.5vw;
+    }
 }

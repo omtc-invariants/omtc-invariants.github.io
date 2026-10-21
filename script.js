@@ -23,3 +23,14 @@ closeit.onclick = function() {
         longSidenav.style.transform = "translateY(-100%)"
     }
 }
+
+let accordionHeaders = document.querySelectorAll(".accordion-header");
+
+accordionHeaders.forEach(function(header) {
+    header.onclick = function() {
+        let panel = header.nextElementSibling;
+        let isOpen = header.getAttribute("aria-expanded") === "true";
+        header.setAttribute("aria-expanded", !isOpen);
+        panel.style.maxHeight = isOpen ? null : panel.scrollHeight + "px";
+    }
+});
