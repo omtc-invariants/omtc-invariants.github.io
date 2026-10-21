@@ -1,15 +1,3 @@
-#contact-details {
-    padding: 0.1vw 4vw 1vw calc(19.4px + 2.5vw);
-    background-color: #e9edfd;
-}
-
-#contact-boxes{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
 .teamphoto {
     user-select: none; 
     pointer-events: none;
@@ -26,72 +14,6 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     border-radius: 15px;
-}
-
-.social-box {
-    width: 200px;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 2vw 20px;
-    cursor: pointer;
-    transition: transform 500ms ease-out;
-    color:white;
-    text-decoration: none;
-}
-
-.social-box:hover {
-    transform: scale(1.05);
-}
-
-.social-box .wrap {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.social-box .wrap h3 {
-    font-size: 17px;
-    margin: 0;
-}
-
-.social-box .wrap img {
-    height: 30px;
-}
-
-.social-box p {
-    font-size: 15px;
-    text-align: center;
-    margin: 5% 0 0 0;
-}
-
-#ig {
-    background: radial-gradient(circle at 30% 107%, #fd5949 25%,#d6249f 60%,#285AEB 90%);
-}
-
-.contact-form { 
-    font-size: 20px;
-}
-
-textarea, input {
-    font-family: "Rubik", sans-serif;
-}
-
-textarea {
-    height: 100px;
-    width: 200px;
-    resize: vertical;
-    min-height: 2.25rem;
-}
-
-.buttonlink {
-    padding: 10px 20px;
-    font-size: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
 }
 
 #about-content {
@@ -111,16 +33,6 @@ label {
 
 #about-description p{
     font-size: 20px;
-}
-
-.sidebyside {
-    display:flex;
-    gap:3.5rem;
-    margin-bottom:1.25rem;
-}
-
-.sidebyside > div {
-    width: 50%;
 }
 
 .flex-container {
@@ -170,32 +82,6 @@ h1{
 }
 
 @media screen and (orientation: portrait) {
-    #contact-details {
-        padding: 3vw 4.25vw 10vw 4.25vw;
-    }
-    
-    #contact-boxes{
-        margin-top: 5vw;
-    }
-
-    .social-box {
-        width: 35vw;
-        padding: 3vw;
-        border-radius: 2vw;
-    }
-
-    .social-box .wrap h3 {
-        font-size: 3vw;
-    }
-
-    .social-box .wrap img {
-        height: 4vw;
-    }
-
-    .social-box p {
-        font-size: 2.5vw;
-    }
-
     .fullteamphoto {
         width: 80vw;
     }
@@ -218,16 +104,6 @@ h1{
 
     #omutree img{
         width: 50vw;
-    }
-
-    .sidebyside {
-        display: inline;
-        margin-bottom: 0px;
-    }
-
-    .sidebyside > div {
-        width: 100%;
-        margin-bottom: 1.25rem;
     }
 
     .flex-container{
@@ -267,63 +143,6 @@ h1{
         font-size: 8vw;
         margin: 3vw 0;
     }
-}
-
-/* contact form styling */
-
-.invalid-feedback,
-.empty-feedback {
-  display: none;
-}
-
-.was-validated :placeholder-shown:invalid ~ .empty-feedback {
-  display: block;
-}
-
-.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
-  display: block;
-}
-
-.is-invalid,
-.was-validated :invalid {
-  border-color: #dc3545;
-}
-
-.reasonably-angry {
-    margin-top: 0.25rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: rgb(248,113,113);
-}
-
-/* .form-input {
-    width: 100%;
-    border-radius: 0.375rem; 
-    border-width: 2px; 
-    border-color: rgb(165,180,252); 
-    padding-left: 0.75rem; 
-    padding-right: 0.75rem; 
-    padding-top: 0.5rem; 
-    padding-bottom: 0.5rem; 
-    color: rgb(209,213,219); 
-    outline: 2px solid transparent; 
-    outline-offset: 2px; 
-    box-shadow: 0 0 0 0px #fff,   0 0 0 calc(3px + 0px) rgb(59,130,246,0.5), 0 0 #0000;
-} */
-
-.form-input {
-    width: 100%; 
-    box-sizing: border-box;
-    border-radius: 0.375rem; 
-    border-width: 2px; 
-    border-color: #C8CFF4; 
-    padding: 0.5rem 0.75rem;
-}
-
-.form-input:focus{
-    outline: 2px solid transparent; 
-    outline-offset: 2px; 
-    box-shadow: 0 0 0 0px #fff,   0 0 0 calc(3px + 0px) rgb(59,130,246,0.5), 0 0 #0000;
 }
 
 /* past committees accordion */
