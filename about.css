@@ -16,7 +16,12 @@
     border-radius: 15px;
 }
 
-#about-content {
+#about-team {
+    padding: 1vw 4vw 1vw calc(19.4px + 2.5vw);
+    text-align: center;
+}
+
+#mission {
     padding: 1vw 4vw 1vw calc(19.4px + 2.5vw);
 }
 
@@ -86,7 +91,12 @@ h1{
         width: 80vw;
     }
 
-    #about-content {
+    #about-team {
+        padding: 3vw 4.25vw 10vw 4.25vw;
+        text-align: center;
+    }
+
+    #mission {
         padding: 3vw 4.25vw 10vw 4.25vw;
     }
 
@@ -94,7 +104,11 @@ h1{
         width: 40vw;
     }
 
-    #about-content p{
+    #about-team p{
+        font-size: 4.5vw;
+    }
+
+    #mission p{
         font-size: 4.5vw;
     }
 
