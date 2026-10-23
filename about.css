@@ -25,6 +25,14 @@
     padding: 1vw 4vw 1vw calc(19.4px + 2.5vw);
 }
 
+#mission h1 {
+    margin-bottom: 10px;
+}
+
+#mission p {
+    font-size: 20px;
+}
+
 #omutree{
     width: 150px;
 }
@@ -97,7 +105,15 @@ h1{
     }
 
     #mission {
-        padding: 3vw 4.25vw 10vw 4.25vw;
+        padding: 3vw 4.25vw 3vw 4.25vw;
+    }
+
+    #mission p{
+        font-size: 4.5vw;
+    }
+
+    #mission h1 {
+        margin-bottom: 1vw;
     }
 
     #omutree{
@@ -105,10 +121,6 @@ h1{
     }
 
     #about-team p{
-        font-size: 4.5vw;
-    }
-
-    #mission p{
         font-size: 4.5vw;
     }
 
