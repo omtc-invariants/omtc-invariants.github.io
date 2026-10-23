@@ -1,0 +1,1 @@
+The website for the Oxford Maths Team Challenge (OMTC). Hosted at [omtc.co.uk](https://www.omtc.co.uk).
